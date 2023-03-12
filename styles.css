@@ -39,6 +39,7 @@ p {
     font-size: 13.4pt;
     color: #1a1a1a;
     line-height: 1.4;
+    letter-spacing: 0.095mm;
     z-index: 1;
 }
 
@@ -79,6 +80,14 @@ font-weight: normal;
 ol, ul {
 padding-left: 1.7em;
 margin-top: 1em;
+width: calc(25vw + 30ch);
+    max-width:100%;
+    font-family: "forma-djr-deck", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 13.4pt;
+    color: #1a1a1a;
+    line-height: 1.4;
 }
 li > ol, li > ul {
 margin-top: 0;
@@ -94,16 +103,6 @@ margin: 1em 0;
 header {
 margin-bottom: 4em;
 text-align: center;
-}
-
-footer {
-max-width: 65ch;
-font-family: "forma-djr-deck", sans-serif;
-font-weight: 500;
-font-style: normal;
-font-size: 9.8pt;
-color: #1a1a1a;
-line-height: 1.7;
 }
 
 span.smallcaps{font-variant: small-caps;}
@@ -160,6 +159,8 @@ vertical-align: middle;
     position: relative;
     height: 22px;
     z-index: 9;
+    font-weight: 500;
+    font-style: oblique;
 }
 
 .link-noindent {
@@ -239,50 +240,53 @@ figcaption {
     
 }
 
+.subtext-berlin {
+    max-width: 65ch;
+font-family: "forma-djr-deck", sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 9.8pt;
+color: #1a1a1a;
+line-height: 1.7;
+}
+
 
 .berlin-images {
-    display: flex;
+    display:inline-flex;
     flex-direction: column;
     gap: 5px;
 }
 
+
 #berlin-1 {
-    width: 100%;
+    width: 80%;
 }
 
 #berlin-2 {
-    width: 100%;
+    width: 80%;
 }
 
 #berlin-3 {
-    width: 100%;
+    width: 80%;
 }
 
 #berlin-4 {
-    width: 100%;
+    width: 80%;
 }
 
 #berlin-5 {
-    width: 100%;
+    width: 80%;
 }
 
 #berlin-6 {
-    width: 100%;
+    width: 80%;
 }
 
 #berlin-7 {
-    width: 100%;
+    width: 80%;
 }
 
 
-figure {
-    position: relative;
-    z-index: 5;
-    font-family: "forma-djr-deck", sans-serif;
-    font-weight: 500;
-    font-size: 12pt;
-    margin-top: 10px;
-}
 
 .footnote-marker {
     font-size: 13.3pt;
