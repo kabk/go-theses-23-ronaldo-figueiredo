@@ -23,11 +23,12 @@ img{
 }
 
 .etching {
-    width: 1000px;
+    width: calc(100px + 65vw);
     position: absolute;
-    z-index: 999;
-    left: 450px;
-    top: 250px;
+    object-position: right top;
+    z-index: 10;
+    left: calc(150px + 15vw);
+    top: 100px;
 }
 
 p {
@@ -48,7 +49,7 @@ p {
 
 #all-indent {
     padding-left: 40px;
-    font-family: "adobe-caslon-pro", serif;
+    font-family: "forma-djr-deck", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 13pt;
@@ -100,7 +101,7 @@ width: calc(25vw + 30ch);
     font-family: "forma-djr-deck", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 11.4pt;
+    font-size: 13.4pt;
     color: #1a1a1a;
     line-height: 1.4;
 }
@@ -140,16 +141,17 @@ vertical-align: middle;
 
 
 #title {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 4px;
     font-family: "indivisible", sans-serif;
     font-weight: 700;
     font-style: bold;
-    font-size: calc(234px + (26 - 14) * ((300vw - 600px) / (1600 - 100)));
-    letter-spacing: -0.05em;
-    line-height: 1em;
-    word-break:normal;
-    padding-top: -10px;
+    font-size: calc(234px + (26 + 20) * ((300vw - 200vw) / (1600 - 100)));
+    letter-spacing: -10px;
+    line-height: 1.1em;
+    white-space: nowrap;
     padding-bottom: 80px;
-    color: #343434;
+    color: #1a1a1a;
 }
 
 
@@ -243,8 +245,8 @@ p {
     background-color: #1a1a1a;
     color: rgb(255, 248, 242);
     display: inline-block;
-    font-size: 15pt;
-    height: 36px;
+    font-size: 16pt;
+    height: 30px;
 
 }
 
@@ -307,7 +309,7 @@ figcaption {
 font-family: "forma-djr-deck", sans-serif;
 font-weight: 500;
 font-style: normal;
-font-size: 9.8pt;
+font-size: 10.8pt;
 color: #1a1a1a;
 line-height: 1.7;
 padding-bottom: 0px;
@@ -363,7 +365,8 @@ padding-bottom: 0px;
 
 .footnote-marker {
     font-size: 10.3pt;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 248, 242);
+    background-color: #1a1a1a;
     cursor: pointer;
 }
 
@@ -373,7 +376,10 @@ padding-bottom: 0px;
     }
 
     #title {
-        font-size: 100px;
+        margin-top: 60px;
+        font-size: 80px;
+        width: 100%;
+        margin-left: -10px;
     }
 
     html {
@@ -396,6 +402,9 @@ padding-bottom: 0px;
     .subtext {
         font-size: 10pt;
     }
+    .subtext-berlin{
+        font-size: 9.8pt;
+    }
 
     img{
         width: 100vw;
@@ -406,5 +415,11 @@ padding-bottom: 0px;
     .story {
         font-size: 11pt;
         line-height: 16.2pt;
+    }
+
+    .etching {
+        width: 95%;
+        top: 10px;
+        left: 10px;
     }
 }
