@@ -197,7 +197,14 @@ vertical-align: middle;
 }
 
 .story {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "forma-djr-deck", sans-serif;
+    font-weight: 600;
+    font-size: 14pt;
+    width: calc(48vw + 20ch);
+    letter-spacing: 1pt;
+    line-height: 18.2pt;
+    margin-right: 20px;
+    font-style: italic;
 }
 
 p {
@@ -394,5 +401,10 @@ padding-bottom: 0px;
         width: 100vw;
         height: auto;
         min-width: 88vw;
+    }
+
+    .story {
+        font-size: 11pt;
+        line-height: 16.2pt;
     }
 }
